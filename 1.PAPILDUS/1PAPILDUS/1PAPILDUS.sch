@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:1PAPILDUS-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L AAA:AAA U?
-U 1 1 5C76C1F4
-P 4850 4350
-F 0 "U?" H 5028 4196 50  0000 L CNN
-F 1 "AAA" H 5028 4105 50  0000 L CNN
-F 2 "" H 4850 4350 50  0001 C CNN
-F 3 "" H 4850 4350 50  0001 C CNN
-	1    4850 4350
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Battery BT1
 U 1 1 5C76C2CE
@@ -86,22 +76,9 @@ Wire Wire Line
 Wire Wire Line
 	4750 3950 4800 3950
 Wire Wire Line
-	4750 3950 4750 4350
-Wire Wire Line
-	4750 4350 4950 4350
-Wire Wire Line
-	4950 4350 4950 4400
-Connection ~ 4750 3950
-Wire Wire Line
 	3900 3950 3900 4800
 Wire Wire Line
 	5100 3950 5100 3700
-Wire Wire Line
-	5100 3950 5100 4250
-Wire Wire Line
-	5100 4250 4850 4250
-Wire Wire Line
-	4850 4250 4850 4400
 Connection ~ 5100 3950
 Wire Wire Line
 	5100 3400 5100 2800
@@ -151,15 +128,7 @@ Wire Wire Line
 	5600 3950 5700 3950
 Wire Wire Line
 	5600 3950 5600 4750
-Wire Wire Line
-	5600 4750 4850 4750
-Wire Wire Line
-	4850 4750 4850 4700
 Connection ~ 5600 3950
-Wire Wire Line
-	4900 4400 4900 4300
-Wire Wire Line
-	4900 4150 4250 4150
 Wire Wire Line
 	4250 4150 4250 4800
 Wire Wire Line
@@ -171,22 +140,7 @@ Wire Wire Line
 Connection ~ 5100 2800
 Wire Wire Line
 	6000 3950 6000 3650
-Wire Wire Line
-	6000 3950 6000 4800
-Wire Wire Line
-	6000 4800 4900 4800
-Wire Wire Line
-	4900 4800 4900 4700
 Connection ~ 6000 3950
-Wire Wire Line
-	4950 4700 5050 4700
-Wire Wire Line
-	5050 4700 5050 4300
-Wire Wire Line
-	5050 4300 4900 4300
-Connection ~ 4900 4300
-Wire Wire Line
-	4900 4300 4900 4150
 $Comp
 L Device:LED D2
 U 1 1 5C770681
@@ -203,4 +157,55 @@ Wire Wire Line
 Wire Wire Line
 	6000 2800 5600 2800
 Connection ~ 5600 2800
+$Comp
+L BC548:BC548** U?
+U 1 1 5C77A9E1
+P 4700 4950
+F 0 "U?" H 5278 4571 50  0000 L CNN
+F 1 "BC548**" H 5278 4480 50  0000 L CNN
+F 2 "" H 5350 4550 50  0001 C CNN
+F 3 "" H 5350 4550 50  0001 C CNN
+	1    4700 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3950 4750 4950
+Wire Wire Line
+	4750 4950 4700 4950
+Connection ~ 4750 3950
+Wire Wire Line
+	5100 3950 5100 4800
+Wire Wire Line
+	5100 4800 5450 4800
+Wire Wire Line
+	5450 4800 5450 5200
+Wire Wire Line
+	5450 5200 5850 5200
+Wire Wire Line
+	5850 5200 5850 6000
+Wire Wire Line
+	5850 6000 5000 6000
+Wire Wire Line
+	5000 6000 5000 5800
+Wire Wire Line
+	5600 4750 4950 4750
+Wire Wire Line
+	4950 4750 4950 4950
+Wire Wire Line
+	4950 4950 5000 4950
+Wire Wire Line
+	6000 5900 4700 5900
+Wire Wire Line
+	4700 5900 4700 5800
+Wire Wire Line
+	6000 3950 6000 5900
+Wire Wire Line
+	4500 5800 4250 5800
+Wire Wire Line
+	4250 5800 4250 4800
+Connection ~ 4250 4800
+Wire Wire Line
+	4250 4150 4500 4150
+Wire Wire Line
+	4500 4150 4500 4950
 $EndSCHEMATC
